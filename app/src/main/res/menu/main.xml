@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-    android:id="@+id/action_searching"
-    android:orderInCategory="100"
-    android:title="Search a Ride"
-    app:showAsAction="never" />
-    <item
-        android:id="@+id/action_offer"
+        android:id="@+id/action_request"
         android:orderInCategory="100"
         android:title="Create a Ride"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_osearch"
+        android:orderInCategory="100"
+        android:title="Search a Ride"
         app:showAsAction="never" />
 </menu>

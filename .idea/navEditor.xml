@@ -80,6 +80,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="nav_setting">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="514" />
+                            <option name="y" value="647" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="nav_trip">
                     <value>
                       <LayoutPositions>
@@ -98,18 +110,6 @@
                         <option name="myPosition">
                           <Point>
                             <option name="x" value="11" />
-                            <option name="y" value="650" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="settingFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="499" />
                             <option name="y" value="650" />
                           </Point>
                         </option>
