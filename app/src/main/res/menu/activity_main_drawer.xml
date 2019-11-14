@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_trip"
+            android:title="MY TRIP" />
+        <item
+            android:id="@+id/nav_message"
+            android:title="MESSAGES" />
+        <item
+            android:id="@+id/nav_help"
+            android:title="HELP" />
+        <item
+            android:id="@+id/nav_safety"
+            android:title="SAFETY" />
+        <item
+            android:id="@+id/nav_setting"
+            android:title="SETTING" />
+
+    </group>
+
+    <item android:title="Model">
+        <menu>
+            <item
+                android:id="@+id/nav_driver"
+                android:title="DRIVER MODE" />
+            <item
+                android:id="@+id/nav_passenger"
+                android:title="PASSENGER MODE" />
+        </menu>
+    </item>
+
+
+
+</menu>

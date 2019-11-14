@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/TVType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drives"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/TVType"
+        android:id="@+id/fave_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="15dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

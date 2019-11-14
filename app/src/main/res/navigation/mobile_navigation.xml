@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.studentridenet.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_trip"
+        android:name="com.example.studentridenet.ui.trip.TripFragment"
+        android:label="trip_fragment" />
+
+    <fragment
+        android:id="@+id/nav_message"
+        android:name="com.example.studentridenet.ui.message.MessageFragment"
+        android:label="message_fragment"
+        tools:layout="@layout/fragment_message" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.example.studentridenet.ui.help.HelpFragment"
+        android:label="help_fragment"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/nav_driver"
+        android:name="com.example.studentridenet.ui.driver.DriverFragment"
+        android:label="driver_fragment"
+        tools:layout="@layout/fragment_driver" />
+
+    <fragment
+        android:id="@+id/nav_passenger"
+        android:name="com.example.studentridenet.ui.passenger.PassengerFragment"
+        android:label="passenger_fragment"
+        tools:layout="@layout/fragment_passenger" />
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="com.example.studentridenet.ui.request.RequestFragment"
+        android:label="RequestFragment" />
+    <fragment
+        android:id="@+id/nav_safety"
+        android:name="com.example.studentridenet.ui.safety.SafetyFragment"
+        android:label="safety_fragment"
+        tools:layout="@layout/safety_fragment" />
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.studentridenet.ui.setting.SettingFragment"
+        android:label="setting_fragment"
+        tools:layout="@layout/setting_fragment" />
+</navigation>
