@@ -100,18 +100,32 @@
             android:text="  LATEST"
             android:inputType="time" />
 
-        <Button
-            android:id="@+id/submit"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="Submit"
-            android:layout_gravity="center"
-            android:background="#ffae1a"/>
     </LinearLayout>
-    <TextView
+
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#d3d3d3"/>
+        android:layout_height="63dp">
+
+        <RadioButton
+            android:id="@+id/ride"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="As Rider" />
+
+        <RadioButton
+            android:id="@+id/Drive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="As Driver" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffae1a"
+        android:text="Submit" />
 
 
 </LinearLayout>

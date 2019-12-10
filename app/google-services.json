@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "332202929025",
+    "firebase_url": "https://studentridenet-30ec5.firebaseio.com",
+    "project_id": "studentridenet-30ec5",
+    "storage_bucket": "studentridenet-30ec5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332202929025:android:4e7c723b38e203483dd680",
+        "android_client_info": {
+          "package_name": "com.example.studentridenet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332202929025-qe0vjicqekhs25h6hcis7c73bkam9ub3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYFMEIA3YR8hDc5VPXmBgBXZ8LZqifN4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332202929025-qe0vjicqekhs25h6hcis7c73bkam9ub3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

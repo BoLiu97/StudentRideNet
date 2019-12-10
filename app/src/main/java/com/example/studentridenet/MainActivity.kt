@@ -63,7 +63,10 @@ class MainActivity : AppCompatActivity() {
                 //bundle.putString("MovieList","nowPlaying")
                 navController.navigate(R.id.action_global_requestFragment)
             }
-
+            R.id.action_search ->
+            {
+                navController.navigate(R.id.action_global_searchFragment)
+            }
 
         }
         return true
