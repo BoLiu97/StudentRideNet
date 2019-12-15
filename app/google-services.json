@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "332202929025-u1i731l31l3m5t2c7noijbt3rtk9uot7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studentridenet",
+            "certificate_hash": "80c337727b57eb6b29af95b2171964d4746d67ab"
+          }
+        },
+        {
+          "client_id": "332202929025-f43s4icvo33fcrqsb2la6ard7eirvh3m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studentridenet",
+            "certificate_hash": "e0898393b9413b40f1b9c6c5919f317e3962182e"
+          }
+        },
+        {
           "client_id": "332202929025-qe0vjicqekhs25h6hcis7c73bkam9ub3.apps.googleusercontent.com",
           "client_type": 3
         }

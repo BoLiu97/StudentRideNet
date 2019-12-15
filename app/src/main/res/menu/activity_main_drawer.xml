@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
@@ -10,9 +11,6 @@
         <item
             android:id="@+id/nav_trip"
             android:title="MY TRIP" />
-        <item
-            android:id="@+id/nav_message"
-            android:title="MESSAGES" />
         <item
             android:id="@+id/nav_help"
             android:title="HELP" />
@@ -22,6 +20,7 @@
         <item
             android:id="@+id/nav_setting"
             android:title="SETTING" />
+
 
     </group>
 
@@ -35,6 +34,20 @@
                 android:title="PASSENGER MODE" />
         </menu>
     </item>
+
+    <item android:title="Action">
+        <menu>
+            <item
+                android:id="@+id/nav_request"
+                android:title="Create a Ride"
+                />
+            <item
+                android:id="@+id/nav_search"
+                android:title="Search a Ride"
+                />
+        </menu>
+    </item>
+
 
 
 

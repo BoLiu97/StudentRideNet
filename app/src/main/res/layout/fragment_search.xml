@@ -66,13 +66,24 @@
             android:inputType="textPostalAddress"
             android:hint="Destination" />
 
-        <EditText
-            android:id="@+id/Date"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:ems="10"
-            android:inputType="date"
-            android:hint="Date" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/eDate"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:text="Pick Date"
+                android:background="#ffae1a"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cDate"
+                android:textSize="30dp"
+                />
+        </LinearLayout>
     </LinearLayout>
 
 
@@ -95,27 +106,28 @@
             />
 
         <RadioGroup
-            android:layout_width="match_parent"
+            android:id="@+id/radio_group1"
 
-            android:layout_height="match_parent" >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <RadioButton
                 android:id="@+id/DriveModel"
-                android:layout_marginTop="25dp"
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:text="DriveModel" />
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="DriveModel"
+                android:textSize="25dp" />
 
             <RadioButton
                 android:id="@+id/PassengerModel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_marginTop="25dp"
-                android:textSize="25dp"
-                android:text="PassengerModel" />
+                android:gravity="center"
+                android:text="PassengerModel"
+                android:textSize="25dp" />
 
         </RadioGroup>
 

@@ -1,22 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.setting.SettingFragment">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
-    <TextView
-        android:id="@+id/TVTjype"
-        android:layout_width="wrap_content"
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/profile_facebooklogin"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/profile_facebooklogout"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="setting"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:textSize="40dp"
-        />
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Facebook Logout"
+        android:textSize="12dp" />
 
-</FrameLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center_horizontal"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#1E88E5"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Name" />
+
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#039BE5"
+        android:gravity="center"
+        android:text="Email"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profile_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00ACC1"
+        android:gravity="center"
+        android:text="id"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/profile_logpage"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Previous Page" />
+
+    <Button
+        android:id="@+id/profile_home_button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Continue" />
+
+</LinearLayout>

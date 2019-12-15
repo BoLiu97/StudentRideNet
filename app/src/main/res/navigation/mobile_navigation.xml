@@ -3,72 +3,102 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/welcomeFragment">
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.studentridenet.ui.home.HomeFragment"
+        android:name="com.example.studentridenet.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_trip"
-        android:name="com.example.studentridenet.ui.trip.TripFragment"
-        android:label="trip_fragment" />
+        android:name="com.example.studentridenet.TripFragment"
+        android:label="Your Trip" />
 
-    <fragment
-        android:id="@+id/nav_message"
-        android:name="com.example.studentridenet.ui.message.MessageFragment"
-        android:label="message_fragment"
-        tools:layout="@layout/fragment_message" />
+
 
     <fragment
         android:id="@+id/nav_help"
-        android:name="com.example.studentridenet.ui.help.HelpFragment"
-        android:label="help_fragment"
+        android:name="com.example.studentridenet.HelpFragment"
+        android:label="Help"
         tools:layout="@layout/fragment_help" />
 
     <fragment
         android:id="@+id/nav_driver"
-        android:name="com.example.studentridenet.ui.driver.DriverFragment"
-        android:label="driver_fragment"
+        android:name="com.example.studentridenet.DriverFragment"
+        android:label="Driver"
         tools:layout="@layout/fragment_driver" />
 
     <fragment
         android:id="@+id/nav_passenger"
-        android:name="com.example.studentridenet.ui.passenger.PassengerFragment"
-        android:label="passenger_fragment"
+        android:name="com.example.studentridenet.PassengerFragment"
+        android:label="Passenger"
         tools:layout="@layout/fragment_passenger" />
     <fragment
-        android:id="@+id/requestFragment"
-        android:name="com.example.studentridenet.ui.request.RequestFragment"
-        android:label="RequestFragment"
-        />
+        android:id="@+id/nav_request"
+        android:name="com.example.studentridenet.RequestFragment"
+        android:label="Request"
+        tools:layout="@layout/request_fragment">
+        <action
+            android:id="@+id/action_nav_request_to_nav_trip"
+            app:destination="@id/nav_trip" />
+    </fragment>
     <fragment
         android:id="@+id/nav_safety"
-        android:name="com.example.studentridenet.ui.safety.SafetyFragment"
-        android:label="safety_fragment"
+        android:name="com.example.studentridenet.SafetyFragment"
+        android:label="Safety"
         tools:layout="@layout/safety_fragment" />
     <fragment
         android:id="@+id/nav_setting"
-        android:name="com.example.studentridenet.ui.setting.SettingFragment"
-        android:label="setting_fragment"
-        tools:layout="@layout/setting_fragment" />
-    <action
-        android:id="@+id/action_global_requestFragment"
-        app:destination="@id/requestFragment" />
-    <action
-        android:id="@+id/action_global_searchFragment"
-        app:destination="@id/searchFragment" />
+        android:name="com.example.studentridenet.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/setting_fragment">
+        <action
+            android:id="@+id/action_nav_setting_self"
+            app:destination="@id/nav_setting" />
+        <action
+            android:id="@+id/action_nav_setting_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_nav_setting_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
     <fragment
-        android:id="@+id/searchFragment"
+        android:id="@+id/nav_search"
         android:name="com.example.studentridenet.SearchFragment"
-        android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        android:label="Search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_nav_search_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
     <fragment
         android:id="@+id/msgIVFragment"
-        android:name="com.example.studentridenet.ui.msgIVFragment"
-        android:label="fragment_msg_iv"
+        android:name="com.example.studentridenet.msgIVFragment"
+        android:label="Message"
         tools:layout="@layout/fragment_msg_iv" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.studentridenet.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_nav_setting"
+            app:destination="@id/nav_setting"
+            app:popUpTo="@+id/welcomeFragment"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_welcomeFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@+id/welcomeFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <action
+        android:id="@+id/action_global_nav_trip"
+        app:destination="@id/nav_trip" />
 
 </navigation>
